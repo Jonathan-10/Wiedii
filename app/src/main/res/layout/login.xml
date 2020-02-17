@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".login">
+
+    <EditText
+        android:id="@+id/User2"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:hint="@string/User2EditText"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/UserTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/UserTextView"
+        app:layout_constraintTop_toTopOf="@+id/UserTextView" />
+
+    <TextView
+        android:id="@+id/UserTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="@string/UserTextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/User2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414" />
+
+    <TextView
+        android:id="@+id/PassTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="@string/PassTextView"
+        app:layout_constraintBottom_toBottomOf="@+id/Pass2EditText"
+        app:layout_constraintEnd_toStartOf="@+id/Pass2EditText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Pass2EditText"
+        app:layout_constraintVertical_bias="0.414" />
+
+    <EditText
+        android:id="@+id/Pass2EditText"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/PassTextView"
+        app:layout_constraintTop_toBottomOf="@+id/User2" />
+
+    <Button
+        android:id="@+id/sesionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/sesionButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pass2EditText"
+        app:layout_constraintVertical_bias="0.007" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
