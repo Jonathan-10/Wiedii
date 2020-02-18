@@ -6,7 +6,7 @@
     <string name="UserTextView">Nobmbre de Usuario</string>
     <string name="User2EditText">Correo Electronico</string>
     <string name="PassTextView">Contrasena</string>
-    <string name="Pass2EditText">Contrasena</string>
+    <string name="Pass2EditText">**********</string>
 
     <string name="sesionButton">Iniciar Sesion</string>
 

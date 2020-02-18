@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_dark"
+    android:background="@color/primaryLightColor"
     tools:context=".login">
 
     <EditText
@@ -12,42 +12,16 @@
         android:layout_width="0dp"
         android:layout_height="42dp"
         android:layout_margin="5dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="416dp"
         android:gravity="center"
         android:hint="@string/User2EditText"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="@+id/UserTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/UserTextView"
-        app:layout_constraintTop_toTopOf="@+id/UserTextView" />
-
-    <TextView
-        android:id="@+id/UserTextView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:gravity="center"
-        android:text="@string/UserTextView"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/User2"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.414" />
-
-    <TextView
-        android:id="@+id/PassTextView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:gravity="center"
-        android:text="@string/PassTextView"
-        app:layout_constraintBottom_toBottomOf="@+id/Pass2EditText"
-        app:layout_constraintEnd_toStartOf="@+id/Pass2EditText"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/Pass2EditText"
-        app:layout_constraintVertical_bias="0.414" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/Pass2EditText"
@@ -55,18 +29,21 @@
         android:layout_height="42dp"
         android:layout_margin="5dp"
         android:gravity="center"
+        android:hint="@string/Pass2EditText"
         android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/PassTextView"
-        app:layout_constraintTop_toBottomOf="@+id/User2" />
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/User2"
+        app:layout_constraintVertical_bias="0.092" />
 
     <Button
         android:id="@+id/sesionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/primaryColor"
         android:text="@string/sesionButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
