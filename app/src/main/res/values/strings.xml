@@ -8,6 +8,9 @@
     <string name="PassTextView">Contrasena</string>
     <string name="Pass2EditText">**********</string>
 
+
     <string name="sesionButton">Iniciar Sesion</string>
 
+
+    <string name="Lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</string>
 </resources>

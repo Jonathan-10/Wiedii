@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/coordinator2">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="16sp"
+            android:autoSizeMinTextSize="9sp"
+            android:maxLines="2"
+            android:padding="5dp"
+            android:text="Reportar Problema"
+            android:textStyle="bold"
+            android:typeface="normal"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etProblema"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:autoSizeMaxTextSize="16dp"
+        android:autoSizeMinTextSize="9dp"
+        android:gravity="top"
+        android:hint="Describe el problema..."
+        android:maxLines="3"
+        android:padding="10dp"
+        android:typeface="normal"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/EnviarProblema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:backgroundTint="@color/primaryDarkColor"
+        android:src="@drawable/vector_enviar_problema"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

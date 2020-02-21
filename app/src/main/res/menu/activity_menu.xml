@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/editar_perfil"
+            android:icon="@drawable/vector_perfil"
+            android:title="Editar Perfil"/>
+
+        <item
+            android:id="@+id/reportar_problema"
+            android:icon="@drawable/vector_problema"
+            android:title="Reportar Problema"/>
+
+        <item
+            android:id="@+id/menu_ajuste"
+            android:icon="@drawable/vector_menu"
+            android:title="Menu de Ajustes"/>
+
+        <item
+            android:id="@+id/cerrar_sesion"
+            android:icon="@drawable/vector_cerrar_sesion"
+            android:title="Cerrar Sesion"/>
+
+
+
+
+    </group>
+
+</menu>

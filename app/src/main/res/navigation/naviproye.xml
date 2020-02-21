@@ -6,21 +6,25 @@
     app:startDestination="@id/login">
     <fragment
         android:id="@+id/login"
-        android:name="com.example.proyecto.login"
+        android:name="com.example.proyecto.view.activities.LoginActivity"
         android:label="login"
-        tools:layout="@layout/login" >
+        tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_login_to_destino1"
-            app:destination="@id/destino1" />
+            android:id="@+id/action_login_to_destino2"
+            app:destination="@id/destino2" />
     </fragment>
     <fragment
         android:id="@+id/destino1"
-        android:name="com.example.proyecto.destino1"
+        android:name="com.example.proyecto.ProductoFragmento"
         android:label="fragment_destino1"
-        tools:layout="@layout/fragment_destino1" />
+        tools:layout="@layout/fragmento_producto" />
     <fragment
         android:id="@+id/destino2"
-        android:name="com.example.proyecto.destino2"
-        android:label="fragment_destino2"
-        tools:layout="@layout/fragment_destino2" />
+        android:name="com.example.proyecto.CategoriaFragmento"
+        android:label="fragmento_categoria"
+        tools:layout="@layout/fragmento_categoria" >
+        <action
+            android:id="@+id/action_destino2_to_destino1"
+            app:destination="@id/destino1" />
+    </fragment>
 </navigation>
